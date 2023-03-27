@@ -1,47 +1,457 @@
-/* Styles for the header */
-header {
-  background-color: #333;
-  color: #fff;
-  padding: 1em;
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    height: 400vh;
+}
+.top-content{
+    padding-top: 10px;
+    z-index: 3;
+    height: 75px;
+    background-color: white;
+}
+.social-links{
+    margin-top: 2.5px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: 100%;
+}
+.social-links i{
+    transition: transform 0.2s ease-in-out;
+}
+.social-links i:hover{
+    transform: scale(1.5);
+}
+ul{
+   list-style: none;
+}
+ul li{
+    margin:auto 10px auto 0;
+}
+.right-side{
+    margin-top: 2.5px;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    height: 100%;
+}
+.right-side a{
+    padding-right: 10px;
+    color: black;
+    text-decoration: none;
+}
+.search-bar a{
+    margin-left: -5px;
+    background-color: white;
+    padding: 8px;
+    padding-top: 8px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: none;
+    transition: background-color 0.2s ease-in-out;
+    border: 1px solid whitesmoke;
+}
+.search-bar input{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: none;
+    padding: 7px;
+    padding-left: 10px;
+    transition: background-color 0.2s ease-in-out;
+    border: 1px solid whitesmoke;
+}
+.search-bar input:focus,.search-bar input:focus ~a{
+    outline: none;
+    background-color: whitesmoke;
+}
+.smaller-icon{
+    font-size: 12px;
+}
+.profile{
+    border-radius: 10px;
+    padding: 7px;
+    padding-left: 12px;
+    background-color: white;
+    transition: background-color 0.2s ease-in-out;
+    border: 1px solid white;
+}
+.profile:hover{
+    background-color: whitesmoke;
+}
+.cart{
+    border-radius: 10px;
+    padding: 7px;
+    padding-left: 12px;
+    background-color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: background-color 0.2s ease-in-out;
+    border: 1px solid white;
+}
+.cart:hover{
+    background-color: whitesmoke;
+}
+@media (max-width:991px) {
+    .search-bar{
+        display: none;
+    }
+}
+@media (max-width:767px) {
+    .search-bar{
+        display: none;
+    }
+    .navbar a{
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+    }
+}
+@media (max-width:575px) {
+    .social-links{
+        display: none;
+    }
+    .navbar a{
+        padding-left: 2px !important;
+        padding-right: 2px !important;
+    }
+}
+.logo{
+    font-family: 'Cinzel', serif;
+    font-size: 22px;
+    padding-top: 8px;
+    padding-left: 20px;
+}
+.logo a{
+    text-decoration: none;
+    color: black;
+}
+.logo span{
+    font-weight: 700;
+}
+header{
+    padding-top: 10px;
+    z-index: 2;
+    position: sticky;
+    top:-1px;
+    width: 100%;
+    height: 75px;
+    background-color: white;
+    border-top: 1px solid whitesmoke;
+}
+.navbar{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.menu-list{
+    padding-top: 5px;
+    display: flex;
+}
+.navbar a{
+    color: rgb(167, 167, 167);
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: opacity 0.2s ease-in-out;
+}
+.navbar a:hover{
+    opacity: 0.3;
+}
+.active{
+    color: black !important;
+    font-weight: bold;
+}
+.hamburger{
+    position: absolute;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 30px;
+    line-height: 45px;
+    display: none;
+    margin-left: -35px;
+    font-size: 18px;
+}
+.menu:hover .hamburger{
+    display: block;
+    animation: slide 0.1s ease-in-out;
+}
+@keyframes slide {
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+.front-books{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    height: 700px;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.front-books img{
+    width: auto;
+    height: auto;
+    max-width: 350px;
+    max-height: 600px;
+    margin: 50px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+#slider{
+    background-color: white;
+    width: 1000px;
+}
+.text-img h1{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 75px;
+}
+.text-img p{
+    color: gray;
+    font-weight: lighter;
+    line-height: 30px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.text-img{
+    display: flex;
+    flex-direction: column-reverse;
+    padding-bottom: 200px;
+}
+.text-img span{
+    display: block;
+}
+.text-img button{
+    border: none;
+    width: 150px;
+    padding: 10px;
+    border-radius: 7px;
+    background-color: whitesmoke;
+}
+.text-img a{
+    text-decoration: none;
+    color: gray;
+}
+.smaller-span{
+    font-size: 50px;
+}
+.awards{
+    background-color: rgb(250, 250, 250);
+    padding: 100px;
+    opacity: 0;
+}
+.awards.animate__animated{
+    opacity: 1;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+.featured{
+    background-color: white;
+    padding-top: 100px;
+}
+.featured-text2{
+    font-size: 36px;
+    font-family: 'Abril Fatface', cursive;
+    padding-bottom: 100px;
+}
+.featured-text1{
+    font-size: 12px;
+    color: gray;
+    letter-spacing: 4px;
+    opacity: 0.5;
+    padding: 25px;
+}
+.featured img{
+    height: auto;
+    aspect-ratio: 9/14;
+    width: 200px;
+    background-color: whitesmoke;
+    padding: 1px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    transition: transform 0.2s ease-in-out;
+}
+.featured img:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.featured h2{
+    font-size: 20px;
+    padding-top: 25px;
+    text-align: center;
+    margin-bottom: -2px;
+}
+.featured p{
+    color: gray;
+    opacity: 0.7;
+}
+.featured span{
+    font-weight: bold;
+    color: gray;
+    letter-spacing: 2px;
+}
+.view-all a{
+    color: gray;
+    text-decoration: none;
+    padding: 150px;
 }
 
-header h1 {
-  margin: 0;
+
+.best-seller img{
+    width: 300px;
+    padding: 1px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin:20px;
+    margin-bottom: 100px;
+}
+.left-best{
+    display: flex;
+    justify-content: center;
+}
+.right-best h2{
+    font-size: 48px;
+    font-family: 'Abril Fatface', cursive;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.right-best h3{
+    font-size: 24px;
+    font-family: 'Abril Fatface', cursive;
+}
+.right-best p{
+    color: gray;
+    opacity: 0.8;
+    padding: 25px;
+    padding-left: 0;
+}
+.best-seller.animate__animated{
+    opacity: 1;
+}
+.best-seller{
+    opacity: 0;
+    background-color: rgb(250, 250, 250);
+    padding-top: 75px;
+}
+.right-best a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin-top: 15px;
+    padding: 15px;
+    transition: opacity 0.2s ease-in-out;
+}
+.right-best a:hover{
+    opacity: 0.5;
+    border-radius: 7px;
+    border: 1px solid gray;
 }
 
-nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+.quote{
+    background-color: whitesmoke;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.quote h2{
+    font-size: 48px;
+    font-family: 'Abril Fatface', cursive;
+}
+.quote p{
+    font-size: 24px;
+    width: 55%;
+    text-align: center;
+    color: gray;
+    padding: 25px;
+    opacity: 0;
+}
+.quote p.animate__animated{
+    opacity: 1;
+}
+.quote h3{
+    color: gray;
+    opacity: 0.3;
+    font-family: sans-serif;
+    letter-spacing: 3px;
 }
 
-nav li {
-  display: inline-block;
-  margin-right: 1em;
+
+.subscribe{
+    height: 70vh;
+}
+.subscribe-left{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.subscribe-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.subscribe h2{
+    padding-left: 80px;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 40px;
+}
+.subscribe p{
+    color: gray;
+    opacity: 0.6;
+}
+.subscribe i{
+    font-size: 20px;
+    text-align: center;
+}
+.subscribe input{
+    border: none;
+    background-color: white;
+    color: black;
+    font-size: 24px;
+    padding: 15px;
+    border-bottom: 1px solid black;
+}
+.subscribe input:focus{
+    outline: none;
+}
+.subscribe button{
+    border: 1px solid white;
+    padding: 15px;
+    border-radius: 7px;
+    background-color: whitesmoke;
+    font-weight: lighter;
+    font-size: 25px;
 }
 
-nav li:last-child {
-  margin-right: 0;
-}
 
-nav a {
-  color: #fff;
-  text-decoration: none;
-}
 
-/* Styles for the sections */
-section {
-  padding: 2em;
-}
 
-section h2 {
-  margin-top: 0;
-}
 
-/* Styles for the footer */
-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 1em;
-  text-align: center;
+
+
+footer{
+    height: 125px;
+    background-color: whitesmoke;
+}
+.footer-stanga{
+    height: 125px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-dreapta{
+    height: 125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
