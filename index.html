@@ -1,34 +1,265 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="css/styles.css">
-  </head>
-  <body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+
+  <script  src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="header-wrap">
+        <div class="top-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6">
+                        <ul class="social-links">
+                            <li><a href="#"><i class="fa-brands fa-facebook" style="color: #000000;"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram" style="color: #000000;"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-twitter" style="color: #000000;"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-youtube" style="color: #000000;"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <div class="right-side">
+                            <div class="search-bar">
+                                <input type="text" placeholder="Search"><a href="#"><i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i></a>
+                            </div>
+                            <a href="#" class="cart"><i class="smaller-icon fa-solid fa-cart-shopping" style="color: #000000;"></i> Cart</a>
+                            <a href="#" class="profile"><i class="smaller-icon fa-solid fa-user" style="color: #000000;"></i> Account</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <header>
-      <h1>My Portfolio</h1>
-      <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <div class="logo">
+                        <a href="#"><span>Book</span>Store</a>
+                    </div>
+                </div>
+                <div class="col-10">
+                    <div class="navbar">
+                        <ul class="menu-list">
+                            <li class="menu-item"><a href="#home" class="active">Home</a></li>
+                            <li class="menu-item"><a href="#home">About</a></li>
+                            <li class="menu-item menu"><a href="#home">Pages</a>
+                                <ul class="hamburger">
+                                    <li><a href="#" class="active">Home</a></li>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Shop</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">Out Store</a></li>
+                                    <li><a href="#">Thank You</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item"><a href="#home">Shop</a></li>
+                            <li class="menu-item"><a href="#home">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
-    <section id="about">
-      <h2>About Me</h2>
-      <p>Insert your about me content here.</p>
+    <div class="front-books">
+        <div class="container">
+            
+            <div class="center">
+            <div id="slider" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+
+                    <div class="row">
+                        <div class="col-md-6 text-img">
+                            <button><a href="#">READ MORE</a> <i class="fa-solid fa-arrow-right" style="color: #000000;"></i></button>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam, quia placeat hic, recusandae, saepe eaque ducimus similique ex amet reiciendis incidunt. Deleniti minima asperiores illum laudantium consequuntur? Voluptates, soluta quia.</p>
+                            <h1>Lord of the <span>flies</span></h1>
+                        </div>
+                        <div class="col-md-6"><img src="img/img1.jpg" class="d-block w-100" alt="Wild Landscape"/></div>
+                    </div>
+
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-6 text-img">
+                            <button><a href="#">READ MORE</a> <i class="fa-solid fa-arrow-right" style="color: #000000;"></i></button>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi unde officia dolore, repudiandae fugit fugiat laboriosam, tempore nemo iste, quas repellat facere consectetur cupiditate aut quisquam optio nam velit perspiciatis?</p>
+                            <h1>BILLY <span>SUMMERS</span></h1>
+                        </div>
+                        <div class="col-md-6"><img src="img/img2.jpg" class="d-block w-100" alt="Wild Landscape"/></div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-6 text-img">
+                            <button><a href="#">READ MORE</a> <i class="fa-solid fa-arrow-right" style="color: #000000;"></i></button>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis totam nemo, debitis qui omnis similique beatae dolores laborum incidunt! Quod ducimus commodi veritatis praesentium excepturi temporibus eum est quos tenetur.</p>
+                            <h1>I Know Why <span class="smaller-span">the Caged Bird Sings</span></h1>
+                        </div>
+                        <div class="col-md-6"><img src="img/img3.jpg" class="d-block w-100" alt="Wild Landscape"/></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+        </div>
+    </div>
+    <section class="awards">
+        <div class="container center">
+            <div class="row">
+                <div class="inner-content">
+                    <div class="logos">
+                            <a href="#"><img src="img/11.png" alt="client"></a>
+                            <a href="#"><img src="img/22.png" alt="client"></a>
+                            <a href="#"><img src="img/33.png" alt="client"></a>
+                            <a href="#"><img src="img/44.png" alt="client"></a>
+                            <a href="#"><img src="img/55.png" alt="client"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    <section id="portfolio">
-      <h2>Portfolio</h2>
-      <p>Insert your portfolio content here.</p>
+
+
+    <section class="featured">
+        <div class="container">
+            <div class="row">
+                <div class="featured-text1 center">
+                    SOME QUALITY ITEMS
+                </div>
+            </div>
+            <div class="row">
+                <div class="featured-text2 center">
+                    Books We Love
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 featured-item d-flex flex-column align-items-center">
+                    <img src="img/img4.jpg">
+                    <h2>Daisy Jones and The Six</h2>
+                    <p>J. K. Rowling</p>
+                    <span>$40.00</span>
+                </div>
+                <div class="col-md-3 featured-item d-flex flex-column align-items-center">
+                    <img src="img/img5.jpg">
+                    <h2>Fahrenheit 451</h2>
+                    <p>Ray Bradbury</p>
+                    <span>$45.00</span>
+                </div>
+                <div class="col-md-3 featured-item d-flex flex-column align-items-center">
+                    <img src="img/img6.jpg">
+                    <h2>Twilight</h2>
+                    <p>Stephenie Meyer</p>
+                    <span>$26.00</span>
+                </div>
+                <div class="col-md-3 featured-item d-flex flex-column align-items-center">
+                    <img src="img/img7.jpg">
+                    <h2>Outlive</h2>
+                    <p>Peter Attia</p>
+                    <span>$55.00</span>
+                </div>
+            </div>
+            <div class="row view-all">
+                <div class="center">
+                <a href="#">View All Products <i class="fa-solid fa-arrow-right" style="color: #000000;"></i></a>
+            </div>
+            </div>
+        </div>
     </section>
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <p>Insert your contact information here.</p>
+
+    <section class="best-seller">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 left-best">
+                    <img src="img/img8.jpg" alt="">
+                </div>
+                <div class="col-md-6 right-best">
+                    <h2>Best Selling Book</h2>
+                    <p>By Colleen Hoover · 2020</p>
+                    <h3>It Ends with Us</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, nobis sapiente excepturi sunt, aliquam repellat maxime accusamus placeat quo ducimus eum sit ad reiciendis itaque magnam consectetur, illo doloremque voluptatem!</p>
+                    <div>$65.00</div>
+                    <a href="#" class="center">View All Products <i class="fa-solid fa-arrow-right" style="color: #000000;"></i></a>
+                </div>
+            </div>
+        </div>
     </section>
+
+    <section class="quote">
+        <h2>Quote Of The Day</h2>
+        <p class="quotep">“The more that you read, the more things you will know. The more that you learn, the more places you’ll go.”</p>
+        <h3>Dr. Seuss</h3>
+    </section>
+
+    <section class="subscribe">
+        <div class="container">
+        <div class="row">
+            <div class="col-md-6 subscribe-left">
+                <h2>Subscribe To Our</h2>
+                <h2>Newsletter</h2>
+            </div>
+            <div class="col-md-6 subscribe-right">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum odit sit non nostrum et perferendis sapiente doloribus quam sequi iste odio harum asperiores, labore cupiditate molestiae tempora. Mollitia, exercitationem in?</p>
+                <form id="form">
+                    <input type="text" name="email" placeholder="Enter your email addresss here">
+                    <button class="btn-subscribe">
+                        <span>send</span> 
+                        <i class="fa-solid fa-paper-plane" style="color: #000000;"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    </section>
+
+
+    
     <footer>
-      <p>Copyright &copy; My Portfolio 2023.
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 footer-stanga">
+                    <p>© 2022 All rights reserved.</p>
+                </div>
+
+                <div class="col-md-6 footer-dreapta">
+                    <div class="social-links align-right">
+                        <ul class="social-links">
+                            <li><a href="#"><i class="fa-brands fa-facebook" style="color: #000000;"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram" style="color: #000000;"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-twitter" style="color: #000000;"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-youtube" style="color: #000000;"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
-  </body>
+
+
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js" integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
 </html>
