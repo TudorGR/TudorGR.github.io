@@ -263,6 +263,31 @@ ul li{
         width: 40% !important;
         height: 100% !important;
     }
+    .logo a{
+        font-size: 14px !important;
+    }
+}
+@media (max-width:400px) {
+    .logo a{
+        display: none !important;
+    }
+    .view-all a{
+        padding: 50px !important;
+    }
+    .quote h2{
+        font-size: 36px !important;
+    }
+    .quote p{
+        font-size: 20px !important;
+    }
+    .awards{
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+    .awards img{
+        width: 65px !important;
+        height: 40px !important;
+    }
 }
 .logos{
     display: flex;
