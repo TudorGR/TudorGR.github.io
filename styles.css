@@ -96,8 +96,46 @@ ul li{
 .cart:hover{
     background-color: whitesmoke;
 }
+@media (max-width:1200px) {
+    .logos img{
+        width: 150px;
+    }
+}
 @media (max-width:991px) {
     .search-bar{
+        display: none;
+    }
+    .logos img{
+        width: 100px;
+    }
+    .front-books img{
+        margin: 0px !important;
+        margin-left: 20px !important;
+        height: 500px;
+        width: 300px !important;
+    }
+    .front-books h1{
+        font-size: 50px;
+        padding-right: 80px !important;
+    }
+    .front-books p{
+        font-size: 14px;
+    }
+    .featured img{
+        width: 150px !important;
+    }
+    .best-seller a{
+        display: none !important;
+    }
+    .subscribe form{
+        display: flex;
+        flex-wrap: nowrap;
+        height: 65px;
+    }
+    .subscribe input{
+        width: 250px;
+    }
+    .subscribe i{
         display: none;
     }
 }
@@ -109,6 +147,47 @@ ul li{
         padding-left: 5px !important;
         padding-right: 5px !important;
     }
+    .logos img{
+        width: 70px;
+    }
+    .awards{
+        padding: 75px !important;
+    }
+
+
+    .front-books{
+        margin-bottom: -100px !important;
+    }
+    .front-books img{
+        margin: 0px !important;
+        margin-left: 20px !important;
+        height: 350px !important;
+        width: 210px !important;
+    }
+    .front-books h1, .front-books span{
+        font-size: 35px !important;
+    }
+    .front-books p{
+        font-size: 12px;
+    }
+
+
+    .featured img{
+        width: 300px !important;
+    }
+    .featured span{
+        margin-bottom: 75px
+    }
+    .best-seller div{
+        padding-bottom: 25px;
+    }
+    .subscribe h2{
+        padding-left: 0 !important;
+    }
+    .subscribe input, .subscribe button{
+        width: 150px;
+        font-size: 16px !important;
+    }
 }
 @media (max-width:575px) {
     .social-links{
@@ -118,6 +197,19 @@ ul li{
         padding-left: 2px !important;
         padding-right: 2px !important;
     }
+    .awards{
+        padding: 50px !important;
+    }
+    .awards img{
+        height: 10vw;
+        width: 15vw;
+    }
+}
+.logos{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 50px;
 }
 .logo{
     font-family: 'Cinzel', serif;
@@ -133,14 +225,17 @@ ul li{
     font-weight: 700;
 }
 header{
-    padding-top: 10px;
+    padding-top: 13px;
     z-index: 2;
     position: sticky;
-    top:-1px;
+    top:-15px;
     width: 100%;
     height: 75px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.795);
     border-top: 1px solid whitesmoke;
+}
+.blur{
+    backdrop-filter: blur(10px);
 }
 .navbar{
     display: flex;
@@ -387,6 +482,7 @@ header{
 
 .subscribe{
     height: 70vh;
+    background-color: rgb(250, 250, 250);
 }
 .subscribe-left{
     height: 70vh;
