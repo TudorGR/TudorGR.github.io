@@ -201,8 +201,67 @@ ul li{
         padding: 50px !important;
     }
     .awards img{
-        height: 10vw;
-        width: 15vw;
+        height: 8vw;
+        width: 13vw;
+    }
+    .navbar a{
+        font-size: 14px !important;
+    }
+
+
+    .front-books h1{
+        padding-top: 40px;
+        padding-right: 0px !important;
+    }
+    .front-books h1, .front-books span{
+        font-size: 24px !important;
+    }
+    .front-books p{
+        font-size: 12px !important;
+        line-height: 20px !important;
+    }
+    .mobile{
+        padding-top: 30px;
+        width: 100px !important;
+    }
+    .text-img{
+        width: 40vw !important;
+    }
+    .front-books img{
+        width: 60vw !important;
+        height: auto !important;
+    }
+
+
+    .subscribe h2{
+        font-size: 20px !important;
+    }
+    .subscribe-left{
+        padding-top: 75px;
+        width: 40% !important;
+        height: 100% !important;
+    }
+    .subscribe-right{
+        padding-top: 75px;
+        width: 40% !important;
+        height: 100% !important;
+    }
+    .subscribe p{
+        display: none;
+    }
+    .subscribe{
+        height: 30vh !important;
+    }
+
+
+
+    .footer-stanga{
+        width: 40% !important;
+        height: 100% !important;
+    }
+    .footer-dreapta{
+        width: 40% !important;
+        height: 100% !important;
     }
 }
 .logos{
