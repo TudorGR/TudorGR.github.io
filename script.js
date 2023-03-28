@@ -1,4 +1,3 @@
-
 $(document).ready(function(){
     $(".awards").waypoint(function(){
         $(".awards").addClass("animate__animated animate__fadeInUp animate__fadeIn");
@@ -11,5 +10,11 @@ $(document).ready(function(){
     }, {offset:"80%"})
     $(".quotep").waypoint(function(){
         $(".quotep").addClass("animate__animated animate__fadeIn");
+    }, {offset:"80%"})
+    $(".front-books").waypoint(function(){
+        $(".front-books").addClass("animate__animated animate__fadeIn");
+    }, {offset:"80%"})
+    $(".subscribe").waypoint(function(){
+        $(".subscribe").addClass("animate__animated animate__fadeIn");
     }, {offset:"80%"})
 })
